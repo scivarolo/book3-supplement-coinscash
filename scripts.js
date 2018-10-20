@@ -19,9 +19,12 @@ console.log("Hello World");
   coinsToCash(piggyBank);
 }
 
+/*
+  cashToCoins starts by calculating max number of quarters, 
+  then works its way down through dimes, nickels, and finally pennies.
+*/
 
 function cashToCoins(dollarAmount) {
-  //Function works its way down: quarters, then dimes, then nickels, then pennies.
   let coins = {
     quarters: 0,
     dimes: 0,
@@ -89,10 +92,13 @@ let coinCount = cashToCoins(12.53);
 console.log(coinCount);
 
 
-
+/* 
+  cashToCoinsAlt grabs one of each type of coin and 
+  continues looping to get a more even distribution of coins
+*/
 
 function cashToCoinsAlt(dollarAmount) {
-  // This version loops through each coin type to distribute the coins evenly between all coin types.
+
   let coins = {
     quarters: 0,
     dimes: 0,
